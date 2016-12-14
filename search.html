@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="x5-fullscreen" content="true" />
-	<meta name="full-screen" content="yes">
 	<meta name="x5-orientation" content="portrait" />
 	<meta name="screen-orientation" content="portrait"> 
     <title>app</title>
@@ -19,7 +17,7 @@
 <body>
 	<div class="header">
 		<div class="header-item iconfont" style="width: 100%;" >
-			<a href="pos.html" style="color: #FFFFFF;">&#xe604;</a>
+			<a href="javascript:;" class="mui-action-back" style="color: #FFFFFF;">&#xe604;</a>
 			<div class="search">
 				<input type="search" placeholder="搜索文章"/>
 				<input type="button" value="搜索"/>
@@ -41,7 +39,9 @@
 	</div>
 </body>
 <script src="js/public.js"></script>
+<script src="js/mui.min.js"></script>
 <script type="text/javascript">
-    resize(750);
+    resize(1334,"y");
+    mui.init();
 </script>
 </html>

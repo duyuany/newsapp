@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="x5-fullscreen" content="true" />
-	<meta name="full-screen" content="yes">
 	<meta name="x5-orientation" content="portrait" />
 	<meta name="screen-orientation" content="portrait"> 
     <title>app</title>
@@ -15,24 +13,70 @@
     <script src="js/jquery.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/iscroll.js"></script>
 </head>
-<body>
+<body onload="loaded()">
 	<div class="header">
-		<div class="header-item iconfont" ><a href="pos.html" style="color: #FFFFFF;">&#xe604;</a></div>
+		<div class="header-item iconfont" ><a href="javascript:;" class="mui-action-back" style="color: #FFFFFF;">&#xe604;</a></div>
 		<div class="header-item"></div>
 		<div class="header-item iconfont"><span>&#xe62e;</span><span>&#xe625;</span></div>
 	</div>
-	<div class="main-con" style="padding: 0.3rem;">
-	<h1>习近平同独杜特尔特会谈：把分歧管控好把合作谈起来</h1>
-	<span>来源：中国新闻周刊</span><span style="margin-left: 0.2rem;">2016-12-04</span><span style="margin-left: 0.2rem;"></span>
-	<img src="img/635056059314531250.jpg" alt="" style="width: 100%;"/>
-	<p>
-		孙建国海军上将的讲话说出了中国最大的特点，就是不服霸，堪称本年度最提气的一句话。在海湾战争伊拉克50万大军被美军空吓倒了，伊拉克军队是世界上第一支被空袭吓到的军队。在朝鲜中国军队遭受的空袭一点也不比伊拉克军队少。
-<br /><br />
-当地时间2015年10月29日，日本东京，日本首相安倍晋三在官邸品尝新凑渔业协会展出的蟹肉。据报道，日本政府专家委员会开会评选利用农林水产品和景观等资源搞活当地经济的成功案例“探索农山渔村之宝”，富山县射水市的新凑渔业协会被评为金奖。
-<br /><br />
-我们在空袭当中的损失，同样巨大。但是只要你内心坚强，不惧怕霸权，一样可以和美军鏖战3年,当地时间2016年3月31日，美国华盛顿，第四届核安全峰会举美国总统奥巴马、日本首相.
-	</p>
+	<div id="wrapper">
+		<div id="scroller">
+			<div class="main-con" style="padding: 0.3rem;">
+				<h1>习近平同独杜特尔特会谈：把分歧管控好把合作谈起来</h1>
+				<span>来源：中国新闻周刊</span><span style="margin-left: 0.2rem;">2016-12-04</span><span style="margin-left: 0.2rem;"></span>
+				<img src="img/635056059314531250.jpg" alt="" style="width: 100%;"/>
+				<p>
+					孙建国海军上将的讲话说出了中国最大的特点，就是不服霸，堪称本年度最提气的一句话。在海湾战争伊拉克50万大军被美军空吓倒了，伊拉克军队是世界上第一支被空袭吓到的军队。在朝鲜中国军队遭受的空袭一点也不比伊拉克军队少。
+			<br /><br />
+			当地时间2015年10月29日，日本东京，日本首相安倍晋三在官邸品尝新凑渔业协会展出的蟹肉。据报道，日本政府专家委员会开会评选利用农林水产品和景观等资源搞活当地经济的成功案例“探索农山渔村之宝”，富山县射水市的新凑渔业协会被评为金奖。
+			<br /><br />
+			我们在空袭当中的损失，同样巨大。但是只要你内心坚强，不惧怕霸权，一样可以和美军鏖战3年,当地时间2016年3月31日，美国华盛顿，第四届核安全峰会举美国总统奥巴马、日本首相.
+				</p>
+				
+				
+				<div class="dianzan">
+					<div class="circle iconfont">&#xe601;</div>
+					<div class="circle iconfont">&#xe647;</div>
+					<div class="circle iconfont">&#xe603;</div>
+				</div>
+				<span class="line">最新评论</span>
+				<div class="list" >
+					<div class="con-img " style="width: 0.8rem;height: 0.8rem;border-radius: 50%;overflow: hidden;margin-top: 0.06rem;background: url(img/003.jpg) no-repeat center;background-size: cover;">
+					</div>
+					<div class="list-left" style="margin: 0.08rem 0 0 0.2rem;">
+						<a href="play.html"><h2 style="padding:0;font-size: 0.3rem;margin: 0rem;">新歌首发</h2></a>
+						<h3 style="font-size: 0.20rem;">印子月-倔强的人</h3>								
+						<p>笑死我了</p>
+					
+					</div>
+
+				</div>
+				<div class="list" >
+					<div class="con-img " style="width: 0.8rem;height: 0.8rem;border-radius: 50%;overflow: hidden;margin-top: 0.06rem;background: url(img/003.jpg) no-repeat center;background-size: cover;">
+					</div>
+					<div class="list-left" style="margin: 0.08rem 0 0 0.2rem;">
+						<a href="play.html"><h2 style="padding:0;font-size: 0.3rem;margin: 0rem;">新歌首发</h2></a>
+						<h3 style="font-size: 0.20rem;">印子月-倔强的人</h3>								
+						<p>笑死我了</p>
+					
+					</div>
+
+				</div>
+				<div class="list" >
+					<div class="con-img " style="width: 0.8rem;height: 0.8rem;border-radius: 50%;overflow: hidden;margin-top: 0.06rem;background: url(img/003.jpg) no-repeat center;background-size: cover;">
+					</div>
+					<div class="list-left" style="margin: 0.08rem 0 0 0.2rem;">
+						<a href="play.html"><h2 style="padding:0;font-size: 0.3rem;margin: 0rem;">新歌首发</h2></a>
+						<h3 style="font-size: 0.20rem;">印子月-倔强的人</h3>								
+						<p>笑死我了</p>
+					
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="send">
 		<input type="text" value="我来说两句"/>
@@ -40,7 +84,16 @@
 	</div>
 </body>
 <script src="js/public.js"></script>
+<script src="js/mui.js"></script>
 <script type="text/javascript">
-    resize(750);
+    resize(1334,"y");
+     var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper', { mouseWheel: true, tap: true });
+	}
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault();}, false);
+	mui.init();
 </script>
 </html>

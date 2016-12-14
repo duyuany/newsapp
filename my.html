@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="x5-orientation" content="portrait" />
+	<meta name="screen-orientation" content="portrait"> 
+    <title>app</title>
+     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+</head>
+<body>
+	<div class="main-con" style="margin-top: 0;">
+		<div class="photo-wrap">
+			<div class="photo">
+				<a href="login.html"><span>登录/注册</span></a>
+			</div>
+			<p>登录查看更多精彩</p>
+		</div>
+		<div class="my-nav-wrap">
+			<div class="my-nav-top">
+				<div class="nav-list">
+					<p class="iconfont">&#xe661;</p>
+					<span>收藏</span></div>
+				<div class="nav-list">
+					<p class="iconfont">&#xe64b;</p>
+					<span>夜间</span></div>
+				<div class="nav-list">
+					<p class="iconfont">&#xe64f;</p>
+					<span>消息</span></div>
+			</div>
+			<ul class="my-nav-bottom">
+				<li><b class=iconfont>&#xe617;</b><span>关于我们</span><span class="iconfont">&#xe61d;</span></li>
+				<li><b class=iconfont>&#xe901;</b><span>我的关注</span><span class="iconfont">&#xe61d;</span></li>
+				<li><b class=iconfont>&#xe60e;</b><span>清除缓存</span><span class="iconfont">&#xe61d;</span></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="footer-item">
+			<div class="iconfont">&#xe60c;</div>
+			<span>订阅</span></div>
+		<div class="footer-item">
+			<div class="iconfont">&#xe613;</div>
+			<span>推荐</span>
+			</div>
+		<div class="footer-item">
+			<div class="iconfont">&#xe600;</div>
+			<span>话题</span></div>
+		<div class="footer-item footer-item-active">
+			<div class="iconfont">&#xe62c;</div>
+			<span>我的</span>
+		</div>
+	</div>
+</body>
+<script src="js/public.js"></script>
+<script src="js/mui.js"></script>
+<script type="text/javascript">
+    resize(1334,"y");
+    var mySwiper = new Swiper ('.swiper-container', {
+        pagination: '.swiper-pagination',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    })
+    
+    mui.init();
+      	//tap为mui封装的单击事件，可参考手势事件章节
+	$(".footer-item").eq(0).on('tap', function() {
+		  //打开关于页面
+		mui.openWindow({
+		    url: 'index.html'
+		});
+	});
+	$(".footer-item").eq(1).on('tap', function() {
+		  //打开关于页面
+		mui.openWindow({
+		    url: 'pos.html'
+		});
+	});
+	$(".footer-item").eq(2).on('tap', function() {
+		  //打开关于页面
+		mui.openWindow({
+		    url: 'play.html'
+		});
+	});
+</script>
+</html>
